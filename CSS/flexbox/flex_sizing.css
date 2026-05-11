@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item1{
+    background-color: #4285f4;
+    padding: 10px;
+    border: solid black;
+    flex-basis: 200px;
+}
+.item2{
+    background-color: #4285f4;
+    padding: 10px;
+    border: solid black;
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+.item3{
+    background-color: #4285f4;
+    padding: 10px;
+    border: solid black;
+    flex-basis: 400px;
+    flex-shrink: 0;
+}
