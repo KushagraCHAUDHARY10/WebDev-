@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Grid Sizing</title>
+        <style>
+            div>div{
+                background-color: skyblue;
+                border: solid whitesmoke;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: auto 400px minmax(200px, 500px);
+                grid-template-rows: 1fr 1fr 2fr;
+                grid-auto-rows: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div><p>width expands to fill space</p></div>
+        <div><p>400px wide</p></div>
+        <div><p>min 200px max 500px wide</p></div>
+        <div><p>400px wide</p></div>
+        <div><p>min 200px max 500px wide</p></div>
+        <div><p>width expands to fill space</p></div>
+        <div><p>400px wide</p></div>
+        <div><p>min 200px max 500px wide</p></div>
+        <div><p>min 200px max 500px wide</p></div>
+        <div><p>50px high</p></div>
+        </div>
+    </body>
+</html>
