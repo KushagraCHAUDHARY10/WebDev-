@@ -1,0 +1,58 @@
+body {
+    font-family: "Sono", sans-serif;
+}
+.one{
+    background-color: #CD7F32;
+}
+.two{
+    background-color: silver;
+}
+.three{
+    background-color: gold;
+}
+.pricing-container{
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    align-items: center;
+}
+.pricing-plan{
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+ul{
+    list-style-type: none;
+}
+.plan-title{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.plan-price{
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+li{
+    margin-bottom: 20px;
+    padding: 0px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    background-color: orangered;
+}
+@media (max-width: 1250px) {
+    .pricing-container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+    }
+}
