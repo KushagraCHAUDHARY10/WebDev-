@@ -24,7 +24,7 @@
       }
       .pricing-container{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         min-height: 100vh;
         align-items: center;
       }
@@ -38,19 +38,28 @@
       }
       .plan-title{
         font-weight: bold;
-        font-size: 20px;
+        font-size: 24px;
         margin-bottom: 10px;
       }
       .plan-price{
         font-weight: bold;
-        font-size: 50px;
+        font-size: 48px;
         margin-bottom: 10px;
       }
       li{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        padding: 0px;
+      }
+      ul{
+        padding: 0;
+        margin: 0;
       }
       button{
         padding: 10px;
+        border-radius: 5px;
+        border: 0px;
+        color: white;
+        background-color: orangered;
       }
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
@@ -62,7 +71,7 @@
     <div class="pricing-container">
       <div class="pricing-plan one">
         <div class="plan-title">Basic</div>
-        <div class="plan-price">$9.99/month</div>
+        <div class="plan-price">$11.99/month</div>
         <ul class="plan-features">
           <li>✅ 10GB Storage</li>
           <li>✅ 1 User</li>
