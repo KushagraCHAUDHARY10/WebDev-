@@ -15,17 +15,38 @@ $(document).on("keydown", function(){
 $("button").click(function(){
     var userChosenColour = $(this).attr("id");
     userClickedPattern.push(userChosenColour);
+    
     playSound(userChosenColour);
     animatePress(userChosenColour);
+    checkAnswer(userClickedPattern.length - 1);
 });
 
+function checkAnswer(currentLevel){
+    if(gamePattern[currentLevel] === userClickedPattern[currentLevel]){
+        console.log("success");
+        if(gamePattern.length === userClickedPattern.length){
+            setTimeout(function(){
+                nextSequence();
+            }, 1000);
+        }
+    }
+    else{
+        console.log("wrong");
+    }
+}
+
 function nextSequence(){
+    userClickedPattern = [];
+
     level++;
     $("#level-title").text("Level " + level);
+
     var next = Math.floor(Math.random*4);
     var randomChosenColour = buttonColor[next];
     gamePattern.push(randomChosenColour);
+
     $("#" + randomChosenColour).fadeOut(100).fadeIn(100);
+
     playSound(randomChosenColour);
     
 }
